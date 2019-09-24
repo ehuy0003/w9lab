@@ -22,8 +22,9 @@
     Book Summary <input name="bookSum" [(ngModel)]="bookSum" type="text" class="form-control" />
   </div>
   <br>
-  <button (click)="saveBook()" class="btn btn-primary">Save Book</button>
-  <button (click)="deleteHard()" class="btn btn-info">Delete Hard Cover</button>
+  <button (click)="saveBook()" class="btn btn-primary">Save Book {{getNo()}}</button>
+  <button (click)="deleteHardCover()" class="btn btn-info">Delete Hard Cover {{getHardCoverNo()}}</button>
+  <button>Count: {{count}}</button>
 
 
   <hr>
